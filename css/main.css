@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+:root {
+  --off-white: #fafcfe;
+  --main-color: #2980b9;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--off-white);
+  font-size: 16px;
+
+  height: auto;
+}
+* {
+  font-family: "Raleway";
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  width: 10px;
+  background-color: rgb(88, 88, 88);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+  width: 50px;
+}
+
+/* start in navbar*/
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 5;
+}
+nav .logo,
+ul,
+li,
+.btn-menu {
+  display: inline-block;
+}
+nav .logo {
+  width: 30%;
+}
+nav ul {
+  width: 69%;
+  display: inline-block;
+  text-align: right;
+  transition: 0.5s;
+}
+nav ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn-menu {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+}
+nav.grow {
+  position: fixed;
+  background-color: #333;
+}
+
+/* ////////////////////// */
+/* start in header */
+
+header {
+  padding: 50px 0;
+  background: url(../img/hero-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 37%;
+  background-image: url(../img/Sep-bot.png);
+  background-position: bottom center;
+  background-size: cover;
+}
+header {
+  padding: 50px 0;
+}
+header .logo {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 190px;
+  height: 190px;
+  text-align: center;
+  margin: auto;
+  line-height: 200px;
+  margin-top: 100px;
+}
+header p.setP {
+  color: var(--off-white);
+}
+header .link {
+  padding: 10px 25px;
+  border: 2px solid var(--off-white);
+  color: var(--off-white);
+  display: block;
+  margin: 50px auto;
+
+  width: max-content;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 4;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+header .link:hover {
+  background-color: #fff;
+  color: #333;
+}
+/* ///////////////////////// */
+/*start in services  */
+.services {
+  overflow: hidden;
+  padding: 50px 0;
+  background-color: var(--off-white);
+}
+
+.services .row {
+  overflow: hidden;
+}
+.services .row .mycard {
+  margin-top: 30px;
+}
+.services .row img {
+  display: block;
+  margin: auto;
+}
+.services .row p {
+  text-align: center;
+  width: 90%;
+  font-weight: 600;
+  color: #616161;
+  margin: auto;
+  margin-top: 25px;
+}
+
+/* ///////////////////////// */
+/* start in OUR PORTFOLIO */
+.partfolio {
+  background: linear-gradient(
+      0deg,
+      rgba(33, 33, 33, 0.8),
+      rgba(33, 33, 33, 0.8)
+    ),
+    url(../img/hero-02.JPG);
+  background-size: cover;
+  padding: 15% 0;
+  position: relative;
+}
+.partfolio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/Sep-top.png);
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.gallary-img {
+  padding: 0;
+  margin: 0;
+}
+.gallary-img img {
+  width: 100%;
+  height: 100%;
+}
+.partfolio .row {
+  width: 95%;
+  margin: auto;
+}
+.partfolio::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16%;
+  background-image: url(../img/Sep-bot.png);
+  background-position: bottom center;
+  background-size: cover;
+  border: none;
+  outline: none;
+}
+
+/* ////////////////////////////////////// */
+/* start in out team */
+.Ourteam p {
+  color: #616161;
+}
+.Ourteam {
+  overflow: hidden;
+}
+.Ourteam .mycard {
+  margin-top: 20px;
+}
+.Ourteam .mycard .img {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+.Ourteam .mycard .img img {
+  width: 100%;
+  height: 100%;
+}
+.Ourteam .mycard .img .overlay {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  transition: 0.5s ease-in-out 0.2s;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(41, 128, 185, 0.5);
+  z-index: 1;
+}
+.Ourteam .mycard .img .overlay i {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 100%;
+  font-size: 2rem;
+  color: var(--main-color);
+  background-color: #fff;
+}
+.Ourteam .mycard .overlay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Ourteam .mycard:hover .overlay {
+  bottom: 0;
+}
+.Ourteam .mycard h1 {
+  background-color: red;
+  height: 100px;
+  width: 100%;
+  z-index: 5;
+  color: green;
+}
+.Ourteam .mycard .title-card {
+  text-align: center;
+  padding: 10px 0;
+}
+.Ourteam .mycard .title-card h3 {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.Ourteam .mycard .title-card p {
+  font-size: 1.2rem;
+}
+/* ////////////////////////////// */
+/* start in our offices*/
+.offices {
+  min-height: 130vh;
+  padding: 100px 0;
+  background: linear-gradient(
+      0deg,
+      rgba(33, 33, 33, 0.8),
+      rgba(33, 33, 33, 0.8)
+    ),
+    url(../img/hero-03.jpg);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.offices .title {
+  margin-top: 180px;
+}
+.offices::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/Sep-top.png);
+  background-position: bottom center;
+  background-size: cover;
+}
+.offices::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  background-image: url(../img/Sep-bot.png);
+  background-position: bottom center;
+  background-size: cover;
+}
+/* /////////////////////////////// */
+/* start in  out client*/
+.OurClient {
+  position: relative;
+  overflow: hidden;
+}
+.OurClient .container {
+  position: relative;
+}
+.OurClient .row {
+  position: relative;
+  margin-top: 100px;
+}
+.line {
+  width: 100%;
+  height: 3px;
+  position: relative;
+  margin-top: 30px;
+  background-color: rgba(41, 128, 185, 0.5);
+  display: none;
+}
+.cuser {
+  position: absolute;
+  left: 0px;
+  transition: 1s;
+  top: 0;
+}
+.cuser::after {
+  content: "";
+  position: absolute;
+  top: -37px;
+  left: 0;
+  border-width: 20px;
+  border-color: transparent transparent var(--main-color) transparent;
+  border-style: solid;
+}
+.OurClient .box {
+  cursor: pointer;
+}
+.OurClient .sliderText {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  min-height: 100px;
+  margin-bottom: 100px;
+}
+.OurClient .sliderText p {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 75%;
+  opacity: 0;
+  transition: 1s;
+}
+.OurClient .sliderText p.active {
+  opacity: 1;
+}
+.OurClient .sliderText span {
+  color: var(--main-color);
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* ///////////////////////// */
+/* start in contact us */
+.contactUs {
+  padding: 100px 0;
+  background: linear-gradient(
+      0deg,
+      rgba(33, 33, 33, 0.8),
+      rgba(33, 33, 33, 0.8)
+    ),
+    url(../img/hero-.jpg);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+.contactUs::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 24%;
+  background-image: url(../img/Sep-top.png);
+  background-position: bottom center;
+  background-size: cover;
+}
+.contactUs .title {
+  margin-top: 200px;
+}
+.contactUs .row {
+  margin-top: 80px;
+  text-align: center;
+}
+.contactUs img {
+  margin: auto;
+  display: block;
+}
+.contactUs .title-card {
+  color: var(--off-white);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.contactUs i {
+  margin-right: 8px;
+}
+.contactUs .phone {
+  color: #fafcfe;
+}
+/* globa setting */
+.setP {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.setP.white {
+  color: var(--off-white);
+}
+.title {
+  width: max-content;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: 20%;
+  height: 4px;
+  border-radius: 5px;
+}
+.title.white {
+  color: var(--off-white);
+}
+.title.white::after {
+  background-color: var(--off-white);
+}
+.title.main {
+  color: var(--main-color);
+}
+.title.main::after {
+  background-color: var(--main-color);
+}
+/* ////////////////////////// */

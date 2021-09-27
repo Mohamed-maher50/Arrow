@@ -1,0 +1,49 @@
+@media (max-width: 992px) {
+  nav {
+    background-color: #333;
+  }
+  nav ul {
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+  nav .btn-menu {
+    display: inline-block;
+  }
+  ul.active {
+    width: 100%;
+    height: auto;
+  }
+
+  ul.active li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 993px) {
+  nav ul {
+    display: inline-block;
+    height: 40px;
+  }
+}
+/*  OUR PORTFOLIO */
+@media (max-width: 991px) {
+  .partfolio .gallary-img {
+    margin-top: 10px;
+  }
+  .partfolio .title {
+    padding-top: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .partfolio .title {
+    padding-top: 0%;
+  }
+}
+/* OurClient */
+@media (min-width: 1200px) {
+  .line {
+    display: block;
+  }
+}
