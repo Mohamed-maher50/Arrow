@@ -8,7 +8,7 @@ links.forEach((item, index) => {
   item.addEventListener("click", function () {
     let top = document.getElementById(`${this.dataset.scroll}`).offsetTop;
 
-    document.documentElement.scrollTop = top;
+    document.documentElement.scrollTop = top - 60;
   });
 });
 
