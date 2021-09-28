@@ -32,9 +32,6 @@
   .partfolio .gallary-img {
     margin-top: 10px;
   }
-  .partfolio .title {
-    padding-top: 20%;
-  }
 }
 @media (min-width: 992px) {
   .partfolio .title {
